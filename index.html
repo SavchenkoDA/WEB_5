@@ -1,20 +1,19 @@
 <h3>Калькулятор стоимости заказа</h3>
 <input type="text" id="cena" value="" placeholder="укажите цену товара">
-<input type="text" id="dlina" value="" placeholder="укажите количество товара">
+<input type="text" id="kolichestvo" value="" placeholder="укажите количество товара">
 <button onclick="raschitat();">Рассчитать стоимость</button>
 <div id="ploschad"></div>
 <div id="stoimost"></div>
 <script type="text/jаvascript">
 function raschitat() {
-
 cena  = document.getElementById('cena').value;
-dlina  = document.getElementById('dlina').value;
+kolichestvo  = document.getElementById('kolichestvo').value;
 if(cena == ""){
 alert("Вы не указали ширину");
-} else if(dlina == ""){
+} else if(kolichestvo == ""){
 alert("Вы не указали длину");
 } else {
-ploschad = parseFloat (cena)* parseFloat (dlina);
+ploschad = parseFloat (cena)* parseFloat (kolichestvo);
 document.getElementById('ploschad').innerHTML = "Площадь равна: "+ ploschad +" кв. м.";
 stoimost = ploschad*cena;
 document.getElementById('stoimost').innerHTML = "Стоимость равна: "+ stoimost +" р.";
