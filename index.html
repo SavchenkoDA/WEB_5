@@ -2,21 +2,18 @@
 <input type="text" id="cena" value="" placeholder="укажите цену товара">
 <input type="text" id="kolichestvo" value="" placeholder="укажите количество товара">
 <button onclick="raschitat();">Рассчитать стоимость</button>
-<div id="ploschad"></div>
 <div id="stoimost"></div>
 <script type="text/jаvascript">
 function raschitat() {
 cena  = document.getElementById('cena').value;
 kolichestvo  = document.getElementById('kolichestvo').value;
 if(cena == ""){
-alert("Вы не указали ширину");
+alert("Вы не указали цену");
 } else if(kolichestvo == ""){
-alert("Вы не указали длину");
+alert("Вы не указали количество");
 } else {
-ploschad = parseFloat (cena)* parseFloat (kolichestvo);
-document.getElementById('ploschad').innerHTML = "Площадь равна: "+ ploschad +" кв. м.";
-stoimost = ploschad*cena;
-document.getElementById('stoimost').innerHTML = "Стоимость равна: "+ stoimost +" р.";
+stoimost = parseFloat (cena)* parseFloat (kolichestvo);
+document.getElementById('stoimost').innerHTML = Стоимость равна: "+ stoimost +" р.";
 }
 }
 </script>
