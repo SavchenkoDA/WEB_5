@@ -12,7 +12,7 @@ alert("Вы не указали цену");
 } else if(kolichestvo == ""){
 alert("Вы не указали количество");
 } else {
-stoimost = parseFloat (cena)* parseFloat (kolichestvo);
+stoimost = cena * kolichestvo;
 document.getElementById('stoimost').innerHTML = Стоимость равна: "+ stoimost +" р.";
 }
 }
