@@ -14,7 +14,7 @@ function price()
         else
         {
             var c = a * b;
-            document.getElementById("pay").innerHTML = "Стоимость топлива составляет: " + c;
+            document.getElementById("pay").innerHTML = "Стоимость покупки: " + c;
         }
     document.addEventListener("DOMContentLoaded", function(){
         console.log("DOMContent Loaded");
